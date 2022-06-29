@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "StronaDoMatmy/1.0.0": {
+        "runtime": {
+          "StronaDoMatmy.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StronaDoMatmy/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
