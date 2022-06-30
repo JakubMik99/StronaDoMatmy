@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj": {}
+    "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj": {}
   },
   "projects": {
-    "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj": {
+    "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj",
+        "projectUniqueName": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj",
         "projectName": "StronaDoMatmy",
-        "projectPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj",
+        "projectPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\StronaDoMatmy.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\obj\\",
+        "outputPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\StronaDoMatmy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
