@@ -1,9 +1,11 @@
 @{
     ViewData["Title"] = "O mnie";
+    DateTime ur = new DateTime(1999,02,11);
+    int wiek = DateTime.Now.Year-ur.Year;
 }
 
 <div class="text-center">
     <h1 class="display-4">Cześć, nazywam się Jakub Mikołajczak</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Mam @wiek lat(a)</p>
     
 </div>

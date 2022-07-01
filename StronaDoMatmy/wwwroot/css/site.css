@@ -16,3 +16,17 @@ html {
 body {
   margin-bottom: 60px;
 }
+.signupParent{
+  background-color: #E3E6FF;
+  display: table;
+  width: 100%;
+}
+
+#signupInner{
+  display: table-cell;
+
+}
+
+form,#welcome{
+  display:inline-block
+}
