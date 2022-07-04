@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\matma\\Matma.csproj": {}
+    "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj": {}
   },
   "projects": {
-    "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\matma\\Matma.csproj": {
+    "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\matma\\Matma.csproj",
+        "projectUniqueName": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
         "projectName": "Matma",
-        "projectPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\matma\\Matma.csproj",
+        "projectPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
         "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\matma\\obj\\",
+        "outputPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",

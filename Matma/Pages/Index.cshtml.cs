@@ -20,7 +20,13 @@ public class IndexModel : PageModel
 
     public void OnGet()
     {
-        var number = Request.From["number"];
-        FirstName = number;
     }
+        public IActionResult OnPost()
+        {
+            if (ModelState.IsValid==false)
+            {
+                return RedirectToPage("./index");
+            }
+                return Page();
+        }
 }
