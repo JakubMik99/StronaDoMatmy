@@ -2,31 +2,20 @@
 @model MyApp.Namespace.KonwerterModel
 @{
     <h1> Konwerter</h1>
-
-
-
-    <div class="row">
-          <div class="col-xs-6">
-
-          </div>
-          <div class="col-xs-6">
-
-          </div>
-    </div>
     <div class="container">
-  <div class="row justify-content-center p-3">
-    <div class="col-auto">
-                  <form method="post" > 
-            <input type="text" asp-for="Liczby.Wartosc" placeholder="Wartość" class/><br><br>
-                  <select asp-for="Liczby.System" class="btn btn-outline-primary dropdown-toggle">
-                    <option value="">Wybierz system liczbowy</option>
-                    <option value="2">Binarny</option>
-                    <option value="8">Ósemkowy</option>
-                    <option value="10">Dziesiętny</option>
-                    <option value="16">Szesnastkowy</option>
+  <div class="row justify-content-center p-3 ">
+    <div class="col-auto ">
+            <form method="post" > 
+              <input type="text" asp-for="Liczby.Wartosc" placeholder="Wartość" class="border border-dark"/><br><br>
+                  <select asp-for="Liczby.System" class="btn border border-dark dropdown-toggle">
+                    <option class="dropdown-item" value="">Wybierz system liczbowy</option>
+                    <option class="dropdown-item" value="2">Binarny</option>
+                    <option class="dropdown-item" value="8">Ósemkowy</option>
+                    <option class="dropdown-item" value="10">Dziesiętny</option>
+                    <option class="dropdown-item" value="16">Szesnastkowy</option>
                   </select>
                   <br><br>
-            <button class="btn btn-outline-primary" type="submit">Dalej</button>
+                  <button class="btn btn-outline-primary text-black border-dark" type="submit">Konwertuj</button>
             </form>
     </div>
     <div class="col-auto">
@@ -37,6 +26,6 @@
             </H3>
     </div>
   </div>
-</div>
+  </div>
 
 }

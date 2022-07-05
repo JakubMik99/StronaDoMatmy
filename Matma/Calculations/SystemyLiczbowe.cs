@@ -2,7 +2,7 @@ namespace Matma.Calculations
 {
     public static class SystemyLiczbowe
     {
-        //15XF jest ok
+
         public static string Przekonwertuj(string liczba, string system)
         {
             string odPowiedzZwrotna="";
@@ -37,8 +37,13 @@ namespace Matma.Calculations
         private static long BinNaDec(string wartosc)
         {
             long dziesietny;
+            if (wartosc.Length<64)
+            {
             if (IsDigitsOnly(wartosc,'0','1'))
                dziesietny = Convert.ToInt64(wartosc,2);
+            else
+                dziesietny=long.MinValue; 
+            }
             else
                 dziesietny=long.MinValue; 
             return dziesietny;
@@ -46,8 +51,14 @@ namespace Matma.Calculations
         private static long OctNaDec(string wartosc)
         {
             long dziesietny;
-            if (IsDigitsOnly(wartosc,'0','8'))
-               dziesietny = Convert.ToInt64(wartosc,8);
+            if (wartosc.Length<22)
+            {
+                if (IsDigitsOnly(wartosc,'0','8'))
+                dziesietny = Convert.ToInt64(wartosc,8);
+                else
+                    dziesietny=long.MinValue; 
+                
+            }
             else
                 dziesietny=long.MinValue; 
             return dziesietny;
@@ -58,6 +69,8 @@ namespace Matma.Calculations
             if (IsDigitsOnly(wartosc,'0','9'))
             {
                 dziesietny=long.Parse(wartosc);
+                if (dziesietny==long.MaxValue)
+                    dziesietny = long.MinValue;
             }
             else
             {
@@ -68,8 +81,13 @@ namespace Matma.Calculations
         private static long HexNaDec(string wartosc)
         {
             long dziesietny;
-            if (OnlyHexInString(wartosc))
-               dziesietny = Convert.ToInt64(wartosc,16);
+            if (wartosc.Length<16)
+            {
+                if (OnlyHexInString(wartosc))
+                dziesietny = Convert.ToInt64(wartosc,16);
+                else
+                    dziesietny=long.MinValue; 
+            }
             else
                 dziesietny=long.MinValue; 
             return dziesietny;
@@ -79,14 +97,14 @@ namespace Matma.Calculations
             string doZwrotu="";
             if(value == long.MinValue)
             {
-                doZwrotu = "Wprowadź poprawną wartość";
+                doZwrotu = "Wprowadzono niepoprawne znaki lub podana liczba jest za wysoka";
             }
             else
             {
-                doZwrotu += $"System binarny: {Convert.ToString(value, 2)}\n";
-                doZwrotu += $"System ósemkowy: {Convert.ToString(value, 8)}\n";
-                doZwrotu += $"System dziesiętny: {value}\n";
-                doZwrotu += $"System szesnastkowy: {Convert.ToString(value, 16)}";
+                doZwrotu += $"Binarny: {Convert.ToString(value, 2)}\n";
+                doZwrotu += $"Ósemkowy: {Convert.ToString(value, 8)}\n";
+                doZwrotu += $"Dziesiętny: {value}\n";
+                doZwrotu += $"Szesnastkowy: {Convert.ToString(value, 16)}";
             }
             return doZwrotu;
         }
