@@ -14,19 +14,12 @@ public class IndexModel : PageModel
     {
         _logger = logger;
     }
-    [BindProperty(SupportsGet = true)]
-    public string FirstName { get; set; }
+
 
 
     public void OnGet()
     {
+        
     }
-        public IActionResult OnPost()
-        {
-            if (ModelState.IsValid==false)
-            {
-                return RedirectToPage("./index");
-            }
-                return Page();
-        }
+
 }

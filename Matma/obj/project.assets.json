@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
+      "projectUniqueName": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
       "projectName": "Matma",
-      "projectPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
+      "projectPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\Matma.csproj",
       "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-      "outputPath": "F:\\repos\\Code Repos\\git\\matma-repo\\StronaDoMatmy\\Matma\\obj\\",
+      "outputPath": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
