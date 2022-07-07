@@ -64,7 +64,21 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true">
+
+</script>
+<script>
+    $(document).scroll(function(){
+    localStorage['page'] = document.URL;
+    localStorage['scrollTop'] = $(document).scrollTop();
+});
+    $(document).ready(function(){
+    if (localStorage['page'] == document.URL) {
+        $(document).scrollTop(localStorage['scrollTop']);
+    }
+});
+</script>
+    
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

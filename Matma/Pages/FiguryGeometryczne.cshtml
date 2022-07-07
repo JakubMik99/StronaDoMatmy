@@ -11,17 +11,15 @@
         <div class="row ">
             <div class="col">
              <form method="post" > 
-              <input type="text" asp-for="Figura.Bok" placeholder="Długość boku" class="border border-dark"/><br><br>
-              <input type="text" asp-for="Figura.Przekatna" placeholder="Długość przekątnej" class="border border-dark"/><br><br>
-              <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
-             </form>
+                <input type="text" asp-for="Figura.KwadratBok" placeholder="Długość boku" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.KwadratPrzekatna" placeholder="Długość przekątnej" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Pole
-            @ViewData["kwadrat"]
-            </div>
-            <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["kwadrat"]
+            </span>
             </div>
   </div>
 </div>
@@ -31,34 +29,59 @@
     <div class="container border-bottom">
         <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.ProstokatBokA" placeholder="Długość boku A" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.ProstokatBokB" placeholder="Długość boku B" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.ProstokatPrzekatna" placeholder="Długość przekątnej" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["prostokat"]
+            </span>
+            
             </div>
   </div>
 </div>
 <div class=" text-center">
     <h4>Koło</h4>
-    <div class="container border-bottom">
+        <div class="container border-bottom">
         <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.KoloPromien" placeholder="Długość promienia" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["kolo"]
+            </span>
             </div>
+  </div>
+</div>
+
   </div>
 </div>
 <div class="text-center">
     <h4>Trapez</h4>
-    <div class="container border-bottom ">
+<div class="container border-bottom">
         <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.TrapezPodstawa1" placeholder="Długość pierwszej podstawy" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.TrapezPodstawa2" placeholder="Długość drugiej podstawy" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.TrapezWysokosc" placeholder="Wysokość" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.TrapezBok1" placeholder="Długość pierwszej ściany" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.TrapezBok2" placeholder="Długość drugiej ściany" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["trapez"]
+            </span>
             </div>
   </div>
 </div>
@@ -67,37 +90,53 @@
     <div class="container border-bottom">
         <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.RombBok" placeholder="Długość boku" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.RombWysokosc" placeholder="Wysokość" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.RombPrzekatnaA" placeholder="Długość pierwszej przekątnej" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.RombPrzekatnaB" placeholder="Długość drugiej przekątnej" class="border border-dark"/><br><br>
+                <input type="text" asp-for="Figura.RombKatAlpha" placeholder="Kąt alpha" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["romb"]
+            </span>
             </div>
   </div>
 </div>
 <div class="text-center">
     <h4>Sześcian</h4>
-    <div class="container border-bottom ">
-        <div class="row">
+        <div class="container border-bottom">
+        <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.SzescianBok" placeholder="Długość boku" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Obwód
+            <span style="white-space: pre-line">
+                @ViewData["szescian"] <br><br>
+            </span>
             </div>
   </div>
 </div>
 <div class="text-center">
     <h4>Prostopadłościan</h4>
-    <div class="container border-bottom ">
+        <div class="container border-bottom">
         <div class="row ">
             <div class="col">
-            Pole
+             <form method="post" > 
+                <input type="text" asp-for="Figura.SzescianBok" placeholder="Długość boku" class="border border-dark"/><br><br>
+                <button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button><br><br>
+                </form>
             </div>
             <div class="col">
-            Objętość
-            </div>
-            <div class="col">
-            Długość przekątnej prostopadłościanu
+            <span style="white-space: pre-line">
+                @ViewData["prostopadloscian"] 
+            </span>
             </div>
   </div>
 </div>
@@ -162,3 +201,5 @@
   </div>
 </div>
 </div>
+
+
