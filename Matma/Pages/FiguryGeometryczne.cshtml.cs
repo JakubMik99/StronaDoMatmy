@@ -24,8 +24,10 @@ namespace MyApp.Namespace
             ViewData["trapez"] = Geometria.WynikTrapez(Figura.TrapezPodstawa1,Figura.TrapezPodstawa2,Figura.TrapezBok1,Figura.TrapezBok2,Figura.TrapezWysokosc);
             ViewData["romb"] =Geometria.WynikRomb(Figura.RombBok,Figura.RombWysokosc,Figura.RombPrzekatnaA,Figura.RombPrzekatnaB,Figura.RombKatAlpha);
             ViewData["szescian"] = Geometria.WynikSzescian(Figura.SzescianBok);
-            ViewData["prostopadloscian"] = ":)";
-            
+            ViewData["prostopadloscian"] = Geometria.WynikProstopadloscian(Figura.ProstopadloscianBokA,Figura.ProstopadloscianBokB,Figura.ProstopadloscianBokC);
+            ViewData["walec"] = Geometria.WynikWalec(Figura.WalecPromien,Figura.WalecWysokosc);
+            ViewData["kula"] = Geometria.WynikKula(Figura.KulaPromien);
+            ViewData["stozek"] = Geometria.WynikStozek(Figura.StozekPromien,Figura.StozekTworzaca,Figura.StozekWysokosc);
             return Page();
         }
     }

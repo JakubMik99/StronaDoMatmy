@@ -26,7 +26,25 @@ namespace Matma.Models
         //Sześcian
         public float SzescianBok { get; set; }
         //Prostopadłościan
-        //public float[] ProstopadloscianBoki { get; set; }
+        public float ProstopadloscianBokA { get; set; }
+        public float ProstopadloscianBokB { get; set; }
+        public float ProstopadloscianBokC { get; set; }
+        //Walec
+        public float WalecPromien { get; set; }
+        public float WalecWysokosc { get; set; }
+        //Kula
+        public float KulaPromien { get; set; }
+        //Stożek
+        public float StozekWysokosc { get; set; }
+        public float StozekPromien { get; set; }
+        public float StozekTworzaca { get; set; }
+        
+        
+        
+        
+        
+        
+        
         
         
         
