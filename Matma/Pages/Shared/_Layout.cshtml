@@ -68,17 +68,15 @@
 
 </script>
 <script>
-    $(document).scroll(function(){
-    localStorage['page'] = document.URL;
-    localStorage['scrollTop'] = $(document).scrollTop();
-});
-    $(document).ready(function(){
-    if (localStorage['page'] == document.URL) {
-        $(document).scrollTop(localStorage['scrollTop']);
-    }
-});
-</script>
-    
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var scrollpos = localStorage.getItem("scrollpos");
+    if (scrollpos) window.scrollTo(0, scrollpos);
+  });
+
+  window.onscroll = function (e) {
+    localStorage.setItem("scrollpos", window.scrollY);
+  };
+</script>    
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
