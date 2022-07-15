@@ -11,7 +11,7 @@
     <option class="dropdown-item" value="4">4x4</option>
     <option class="dropdown-item" value="5">5x5</option>
     </select><br><br>
-<button type="submit"> Potwierdź</button><br>
+    <button class="btn btn-outline-primary text-black border-dark" type="submit"> Potwierdź</button><br><br>
 </form>
 <form asp-page-handler="Oblicz" method="post">
 @for (int i = 0; i < @Model.Rozmiar; i++)
@@ -22,7 +22,7 @@
         }
         <br><br>
 }
-<br><br><br>
+<br><br>
 @for (int i = 0; i < @Model.Rozmiar; i++)
 {
         @for (int j = 0; j < Model.Rozmiar; j++)
@@ -31,9 +31,33 @@
         }
         <br><br>
 }
-    <br><br><button type="submit">Oblicz</button>
+    <br><br><button class="btn btn-outline-primary text-black border-dark" type="submit">Oblicz</button>
 </form>
 <span style="white-space: pre-line">
-@ViewData["Macierz"]
-
+    <div class="container text-center">
+        <div class="row row-cols-2">
+                <div class="col">
+                    <h3 class="border-bottom border-5">Macierz A</h3>
+                    <p class="fs-3">  @ViewData["macierzA"] </p>
+                </div>
+                <div class="col">
+                    <h3 class="border-bottom border-5">Macierz B</h3>
+                    <p class="fs-3">  @ViewData["macierzB"] </p>
+                </div>
+        </div>
+        <div class="row row-cols-3">
+            <div class="col">
+                <h3 class="border-bottom border-5">Dodawanie</h3>
+                <p class="fs-3">  @ViewData["dodawanieMacierzy"]</p>
+            </div>
+            <div class="col">
+                <h3 class="border-bottom border-5">Odejmowanie</h3>
+                <p class="fs-3">  @ViewData["odejmowanieMacierzy"]</p>
+            </div>
+            <div class="col">
+                <h3 class="border-bottom border-5">Mnożenie</h3>
+                <p class="fs-3"> @ViewData["mnozenieMacierzy"]</p>
+            </div>
+    </div>
+    </div>
 </span>

@@ -14,6 +14,14 @@ namespace MyApp.Namespace
         
         public IActionResult OnPostOblicz(int[]macierz1, int[]macierz2)
         {
+            ObliczMatrix Wyniki = new ObliczMatrix();
+            string dodawanie, odejmowanie, mnozenie, macierzA, macierzB;
+            mnozenie= Wyniki.WszystkieWyniki(macierz1, macierz2,out dodawanie,out odejmowanie, out macierzA, out macierzB);
+            ViewData["dodawanieMacierzy"] = dodawanie;
+            ViewData["odejmowanieMacierzy"] = odejmowanie;
+            ViewData["mnozenieMacierzy"] = mnozenie;
+            ViewData["macierzA"] = macierzA;
+            ViewData["macierzB"] = macierzB;
             int size = Rozmiar;
             for (var i = 0; i < macierz1.Length; i++)
             {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aYwDa6YLrHOR0MgcRIn/9F/caDHf55adlLxs+6aeEeU=",
+  "Hash": "O4IfUxQ9NU8pjrDqWwIqLghhgx2UZZ9fUxioXG87AfM=",
   "Source": "Matma",
   "BasePath": "_content/Matma",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\wwwroot\\img\\calculator.svg",
+      "SourceId": "Matma",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\wwwroot\\",
+      "BasePath": "_content/Matma",
+      "RelativePath": "img/calculator.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\calculator.svg"
     },
     {
       "Identity": "F:\\repos\\Code Repos\\Git\\matma-repo\\StronaDoMatmy\\Matma\\wwwroot\\js\\site.js",
