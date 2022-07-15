@@ -1,0 +1,39 @@
+﻿@page
+@model MyApp.Namespace.MacierzeModel
+@{
+}
+<h1 class="border-bottom border-5"> Macierze </h1>
+<form method="post" asp-page-handler="WybierzRozmiar">
+    <select asp-for="Rozmiar" class="btn border border-dark dropdown-toggle">
+    <option class="dropdown-item" value="1">Wybierz rozmiar macierzy</option>
+    <option class="dropdown-item" value="2">2x2</option>
+    <option class="dropdown-item" value="3">3x3</option>
+    <option class="dropdown-item" value="4">4x4</option>
+    <option class="dropdown-item" value="5">5x5</option>
+    </select><br><br>
+<button type="submit"> Potwierdź</button><br>
+</form>
+<form asp-page-handler="Oblicz" method="post">
+@for (int i = 0; i < @Model.Rozmiar; i++)
+{
+        @for (int j = 0; j < Model.Rozmiar; j++)
+        {
+            <input class="form-label" style="width: 8%;" name="Macierz1" type="number"  class="border border-dark"/>
+        }
+        <br><br>
+}
+<br><br><br>
+@for (int i = 0; i < @Model.Rozmiar; i++)
+{
+        @for (int j = 0; j < Model.Rozmiar; j++)
+        {
+            <input class="form-label" style="width: 8%;" name="Macierz2" type="number"  class="border border-dark"/>
+        }
+        <br><br>
+}
+    <br><br><button type="submit">Oblicz</button>
+</form>
+<span style="white-space: pre-line">
+@ViewData["Macierz"]
+
+</span>
